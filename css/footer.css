@@ -1,0 +1,132 @@
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: gray;
+    font-family: sans-serif;
+}
+:root {
+    --iden: #333333;
+}
+i {
+    cursor: pointer;
+}
+input[type="submit"] {
+    cursor: pointer;
+}
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.white {
+    color: white;
+    transition-duration: .2s;
+}
+i {
+    cursor: pointer;
+    transition-duration: .2s;
+}
+.footer {
+    background-color: var(--iden);
+    margin: auto;
+}
+.cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 50px 20px;
+    padding: 20px;
+}
+@media (min-width: 1000px) {
+    .cont {
+        width: 80%;
+        padding: 30px 0;
+        margin: auto;
+    }
+    .real-cont {
+        width: 80%;
+        margin: auto;
+    }
+}
+.contact > p {
+    margin: 20px 0;
+}
+.contact > .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2,47%);
+    gap: 6%;
+}
+.contact > .contact-grid > div > div:first-child {
+    margin-bottom: 25px;
+}
+.contact > .contact-grid > div > div > p:first-child {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.small {
+    display: grid;
+    grid-template-columns: repeat(2,calc(50% - 20px));
+    gap: 40px;
+}
+.small ul {
+    margin-top: 20px;
+    list-style: none;
+}
+.small ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.news > p:first-of-type {
+    margin: 20px 0;
+}
+.news > form {
+    display: flex;
+}
+.news > form > input:first-child {
+    background-color: #4c4c4c;
+    width: 60%;
+    padding: 15px;
+    margin-right: 3px;
+}
+.news > form > input:last-child {
+    width: 25%;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 0, 0);
+}
+.news > p:last-of-type {
+    margin: 20px 0 10px;
+}
+.news i {
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.real-footer {
+    padding: 15px 0; 
+    font-size: 1.3rem;
+}
+.real-footer i {
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 5px;
+}
+.white:hover {
+    color: aqua;
+}
+i:hover {
+    color: aqua;
+}
